@@ -4,9 +4,34 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+import less from 'gulp-less';
+import watchLess from 'gulp-watch-less';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+
+// less task
+gulp.task('watch-less', function() {
+  return gulp.src('app/styles/less/*.less')
+    .pipe(watchLess('app/styles/less/*.less'))
+    .pipe(less())
+    .pipe(gulp.dest('app/styles/less'));
+})
+gulp.task('compile-less', function() {  
+  return gulp.src('app/styles/less/*.less')
+    .pipe($.sourcemaps.init())
+    .pipe(less())
+    .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
+    .pipe($.sourcemaps.write('.'))
+    .pipe(gulp.dest('app/styles/less'))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('minify-less', function() {
+  return gulp.src('app/styles/less/*.css')
+    .pipe($.cssnano())
+    .pipe(gulp.dest('dist/styles'));
+});
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.css')
@@ -84,7 +109,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['styles', 'scripts', 'fonts', 'watch-less'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -147,7 +172,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'compile-less', 'minify-less', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

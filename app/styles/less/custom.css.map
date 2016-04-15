@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.less","custom.css"],"names":[],"mappings":"AACA;EACC,wBAAA;CCAA","file":"custom.css","sourcesContent":["// Padding en el logo de la barra de navegación para que no se pegue a las letras\n.navbar-logo {\n\tpadding: 0px 5px 0 15px;\n}",".navbar-logo {\n  padding: 0px 5px 0 15px;\n}\n"],"sourceRoot":"/source/"}

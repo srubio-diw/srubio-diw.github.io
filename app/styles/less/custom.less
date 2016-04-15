@@ -1,0 +1,67 @@
+// ----------------------------------------------------
+// COLORES DE LA PALETA
+// ----------------------------------------------------
+@color-primary-0: #003E41;	/* Main Primary color */
+@color-primary-1: #021F20;
+@color-primary-2: #0E383A;
+@color-primary-3: #017B81;
+@color-primary-4: #2B9196;
+
+@color-complement-0: #6B3100;	/* Main Complement color */
+@color-complement-1: #351A03;
+@color-complement-2: #613917;
+@color-complement-3: #D56200;
+@color-complement-4: #F89846;
+
+// ----------------------------------------------------
+// VARIABLES SUSCEPTIBLES DE CAMBIOS
+// ----------------------------------------------------
+// Ancho del slider de cabecera
+@slider-width: 640px;
+
+// Color del aside
+@aside-color: @color-complement-3;
+
+// ----------------------------------------------------
+// CSS GENERAL
+// ----------------------------------------------------
+// Padding en el logo de la barra de navegación para que no se pegue a las letras
+.navbar-logo {
+	padding: 0px 10px;
+}
+
+.bx-wrapper, {
+	width: @slider-width;
+}
+
+aside {
+	// Aside flotando a la izquierda, section flotando a la derecha
+	float: left;
+	// Color de fondo
+	background-color: @aside-color;
+}
+
+section {
+	float: right;
+}
+
+// ----------------------------------------------------
+// MEDIA QUERIES POR TAMAÑO
+// ----------------------------------------------------
+// Estilo para monitores de portatil y sobremesas
+// Para las propiedades calculadas indico en un comentario el tamaño en px que le daría si la pantalla tuviera 1000px de ancho
+@media screen 
+	and (min-device-width: 1000px) {
+	
+	// Ancho fijo
+	aside {
+		width: 20%; // 200px
+		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
+	}
+
+	// Ancho fijo
+	section {
+		width: 700px;
+		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
+	}
+}
