@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datos_cliente>
+    <id>18047592K</id>
+    <nombre>Sylvia</nombre>
+    <apellidos>Rubio Peinado</apellidos>
+    <telefonos total="2">
+        <telefono>+346589660250</telefono>
+        <telefono>665110610</telefono>
+    </telefonos>
+    <mails>
+        <mail>correo@dominio.es</mail>
+    </mails>
+</datos_cliente>

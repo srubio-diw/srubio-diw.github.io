@@ -27,12 +27,6 @@ gulp.task('compile-less', function() {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('minify-less', function() {
-  return gulp.src('app/styles/less/*.css')
-    .pipe($.cssnano())
-    .pipe(gulp.dest('dist/styles'));
-});
-
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.css')
     .pipe($.sourcemaps.init())
@@ -71,7 +65,7 @@ gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
 gulp.task('html', ['styles', 'scripts'], () => {
-  return gulp.src('app/*.html')
+  return gulp.src('app/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano()))
@@ -101,7 +95,7 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
-    '!app/*.html'
+    '!app/**/.html'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -122,7 +116,7 @@ gulp.task('serve', ['styles', 'scripts', 'fonts', 'watch-less'], () => {
   });
 
   gulp.watch([
-    'app/*.html',
+    'app/**/*.html',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
@@ -164,7 +158,7 @@ gulp.task('serve:test', ['scripts'], () => {
 
 // inject bower components
 gulp.task('wiredep', () => {
-  gulp.src('app/*.html')
+  gulp.src('app/**/*.html')
     .pipe(wiredep({
       exclude: ['bootstrap.js'],
       ignorePath: /^(\.\.\/)*\.\./
@@ -172,7 +166,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'compile-less', 'minify-less', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'compile-less', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

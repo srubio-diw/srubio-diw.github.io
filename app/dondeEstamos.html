@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Camping La Rosa de los Vientos :: Instalaciones</title>
+	<title>Camping La Rosa de los Vientos :: ¿Dónde estamos?</title>
 
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!-- Place favicon.ico in the root directory -->
@@ -15,8 +15,6 @@
 	<!-- build:css styles/vendor.css -->
 	<!-- bower:css -->
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 
@@ -27,6 +25,9 @@
 	<!-- build:js scripts/vendor/modernizr.js -->
 	<script src="/bower_components/modernizr/modernizr.js"></script>
 	<!-- endbuild -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css" />
+	
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -38,22 +39,15 @@
 		<div class="container">
 			<!-- Ruta de navegación -->
 			<ol class="breadcrumb">
-				<li class="active"><a href="index.html">Inicio</a></li>
+				<li><a href="index.html">Inicio</a></li>
+				<li>Sobre nosotros</li>
+				<li class="active"><a href="dondeEstamos.html">¿Dónde estamos?</a></li>
 			</ol>
 
 			<aside>
 			lateral
 			</aside>
 
-			<section class="panel">
-				<!-- Slidr de cabecera -->
-				<ul class="home-slider bxslider">
-					<li><img src="images/lg/camping1.jpg" title="By The original uploader was Mwanner at English Wikipedia - Transferred from en.wikipedia to Commons., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2105744" alt="Coche, tienda y mesa en zona libre" /></li>
-					<li><img src="images/lg/camping2.jpg" title="By Frank Vincentz - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=12158409" alt="Vista en picado del camping" /></li>
-					<li><img src="images/lg/camping3.jpg" title="Dominio público" alt="Bungalows de dos plantas" /></li>
-					<li><img src="images/lg/camping4.jpg" title="Dominio público" alt="Vista de la playa" /></li>
-				</ul>
-			</section>
 		</div>
 	
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -86,13 +80,15 @@
 		<script src="/bower_components/bootstrap/js/scrollspy.js"></script>
 		<script src="/bower_components/bootstrap/js/collapse.js"></script>
 		<script src="/bower_components/bootstrap/js/tab.js"></script>
-		<!-- bxSlider -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
 		<!-- endbuild -->
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
 		
 		<!-- build:js scripts/main.js -->
 		<script src="scripts/main.js"></script>
 		<!-- endbuild -->
+
+		
 	</body>
 	<script>
 		$(document).ready(function(){
@@ -103,7 +99,7 @@
 				captions: true,
 				adaptiveHeight: true
 			});
-			$('nav').load('html/partials/head.html');
+			$('nav').load('html/head.html');
 		});
 	</script>
 </html>

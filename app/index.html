@@ -15,8 +15,6 @@
 	<!-- build:css styles/vendor.css -->
 	<!-- bower:css -->
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 
@@ -27,6 +25,9 @@
 	<!-- build:js scripts/vendor/modernizr.js -->
 	<script src="/bower_components/modernizr/modernizr.js"></script>
 	<!-- endbuild -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css" />
+	
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -88,11 +89,12 @@
 		<script src="/bower_components/bootstrap/js/tab.js"></script>
 		<!-- endbuild -->
 		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+		
 		<!-- build:js scripts/main.js -->
 		<script src="scripts/main.js"></script>
 		<!-- endbuild -->
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
 		
 	</body>
 	<script>
@@ -104,7 +106,7 @@
 				captions: true,
 				adaptiveHeight: true
 			});
-			$('nav').load('html/partials/head.html');
+			$('nav').load('html/head.html');
 		});
 	</script>
 </html>
