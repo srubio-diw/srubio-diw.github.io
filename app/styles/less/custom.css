@@ -1,1 +1,27 @@
-.navbar-logo{padding:0 10px}.bx-wrapper{width:640px}aside{float:left;background-color:#D56200}section{float:right}@media screen and (min-device-width:1000px){aside{width:20%;margin:1% .5% 1% 2.5%}section{width:700px;margin:1% .5% 1% 2.5%}}
+/* Main Primary color */
+/* Main Complement color */
+.navbar-logo {
+  padding: 0px 10px;
+}
+.bx-wrapper {
+  width: 640px;
+}
+aside {
+  float: left;
+  background-color: #D56200;
+}
+section {
+  float: right;
+}
+@media screen and (min-device-width: 1000px) {
+  aside {
+    width: 20%;
+    margin: 1% 0.5% 1% 2.5%;
+  }
+  section {
+    width: 700px;
+    margin: 1% 0.5% 1% 2.5%;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
