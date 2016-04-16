@@ -15,8 +15,9 @@ gulp.task('watch-less', function() {
   return gulp.src('app/styles/less/*.less')
     .pipe(watchLess('app/styles/less/*.less'))
     .pipe(less())
-    .pipe(gulp.dest('app/styles/less'));
-})
+    .pipe(gulp.dest('app/styles'));
+});
+
 gulp.task('compile-less', function() {  
   return gulp.src('app/styles/less/*.less')
     .pipe($.sourcemaps.init())

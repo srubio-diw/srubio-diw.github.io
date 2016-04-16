@@ -40,6 +40,7 @@
 			<!-- Ruta de navegación -->
 			<ol class="breadcrumb">
 				<li><a href="index.html">Inicio</a></li>
+				<li>Instalaciones y servicios</li>
 				<li class="active"><a href="galeria.html">Galería</a></li>
 			</ol>
 
@@ -90,15 +91,10 @@
 		
 	</body>
 	<script>
-		$(document).ready(function(){
-			$('.bxslider').bxSlider({
-				auto: true,
-				autoControls: true,
-				mode: 'fade',
-				captions: true,
-				adaptiveHeight: true
-			});
+		$(document).ready(function() {
+			// Cargo la cabezera
 			$('nav').load('html/head.html');
+			$('nav ul > li').addClass('active');
 		});
 	</script>
 </html>
