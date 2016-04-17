@@ -18,9 +18,17 @@
 // ----------------------------------------------------
 // Ancho del slider de cabecera
 @slider-width: 640px;
+@slider-height: 515px;
 
 // Color del aside
-@aside-color: @color-complement-3;
+@aside-color: @color-complement-4;
+
+// ----------------------------------------------------
+// MIXINS
+// ----------------------------------------------------
+.max-height {
+	height: 100%;
+}
 
 // ----------------------------------------------------
 // CSS GENERAL
@@ -30,19 +38,50 @@
 	padding: 0px 10px;
 }
 
+// Caja del slider de cabecera
 .bx-wrapper, {
+	// Ancho del slider de imágenes	
 	width: @slider-width;
+	// Centrar el slider
+	margin: auto !important;
+	// Correción para centrar la imagen
+	img {
+    	margin: 0 auto;
+	}
 }
 
-aside {
+// Contenedor de la página
+#page {
+	// A la derecha
+	float: right;
+	.max-height;
+	margin: 10px 0px;
+	// Panel
+	.panel {
+		min-height: @slider-height;
+		margin: 0px;
+	}
+}
+
+// Columna lateral
+aside.panel {
 	// Aside flotando a la izquierda, section flotando a la derecha
 	float: left;
+	// Posición absoluta
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
 	// Color de fondo
 	background-color: @aside-color;
+	margin: 10px 0px;
+	// Borde
+	border: 5px outset @color-complement-3;
 }
 
-section {
-	float: right;
+// Contenedor en posicion relativa
+.container {
+	position: relative;
+	.max-height;
 }
 
 // ----------------------------------------------------
@@ -60,8 +99,8 @@ section {
 	}
 
 	// Ancho fijo
-	section {
-		width: 700px;
+	#page {
+		width: 74%; // 740px
 		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
 	}
 }
