@@ -1,1 +1,49 @@
-.max-height{height:100%}.navbar-logo{padding:0 10px}.bx-wrapper{width:640px;margin:auto!important}.bx-wrapper img{margin:0 auto}#page{float:right;height:100%;margin:10px 0}#page .panel{min-height:515px;margin:0}aside.panel{float:left;position:absolute;top:0;bottom:0;background-color:#F89846;margin:10px 0;border:5px outset #D56200}.container{position:relative;height:100%}@media screen and (min-device-width:1000px){aside{width:20%;margin:1% .5% 1% 2.5%}#page{width:74%;margin:1% .5% 1% 2.5%}}
+/* Main Primary color */
+/* Main Complement color */
+.max-height {
+  height: 100%;
+}
+.navbar-logo {
+  padding: 0px 10px;
+}
+.bx-wrapper {
+  width: 640px;
+  margin: auto !important;
+}
+.bx-wrapper img {
+  margin: 0 auto;
+}
+#page {
+  float: right;
+  height: 100%;
+  margin: 10px 0px;
+}
+#page .panel {
+  min-height: 515px;
+  margin: 0px;
+}
+aside.panel {
+  float: left;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-color: #F89846;
+  margin: 10px 0px;
+  border: 5px outset #D56200;
+}
+.container {
+  position: relative;
+  height: 100%;
+}
+@media screen and (min-device-width: 1000px) {
+  aside {
+    width: 20%;
+    margin: 1% 0.5% 1% 2.5%;
+  }
+  #page {
+    width: 74%;
+    margin: 1% 0.5% 1% 2.5%;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
