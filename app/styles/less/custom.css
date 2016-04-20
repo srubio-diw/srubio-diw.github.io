@@ -3,6 +3,25 @@
 .max-height {
   height: 100%;
 }
+.common-aside {
+  float: left;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-color: #F89846;
+  margin: 10px 0px;
+  border: 5px outset #fbc190;
+}
+.common-page {
+  float: right;
+  height: 100%;
+  margin: 10px 0px;
+}
+.panel {
+  min-height: 515px;
+  margin: 0px;
+  padding: 10px;
+}
 .navbar-logo {
   padding: 0px 10px;
 }
@@ -13,36 +32,58 @@
 .bx-wrapper img {
   margin: 0 auto;
 }
-#page {
-  float: right;
-  height: 100%;
-  margin: 10px 0px;
-}
-#page .panel {
-  min-height: 515px;
-  margin: 0px;
-}
-aside.panel {
-  float: left;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  background-color: #F89846;
-  margin: 10px 0px;
-  border: 5px outset #D56200;
-}
 .container {
   position: relative;
   height: 100%;
 }
-@media screen and (min-device-width: 1000px) {
-  aside {
-    width: 20%;
-    margin: 1% 0.5% 1% 2.5%;
+section.panel {
+  border: 2px solid #003E41;
+}
+aside {
+  margin: 0px;
+}
+#page {
+  width: 80%;
+  margin: 0px auto;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  #page {
+    width: 65.104166667%;
+    margin: 1.302083333% 0.651041667% 1.302083333% 3.255208333%;
+    float: right;
+    height: 100%;
+    margin: 10px 0px;
   }
+  aside.panel {
+    width: 26.041666667%;
+    margin: 1.302083333% 0.651041667% 1.302083333% 3.255208333%;
+    float: left;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: #F89846;
+    margin: 10px 0px;
+    border: 5px outset #fbc190;
+  }
+}
+@media screen and (min-device-width: 1200px) {
   #page {
     width: 74%;
     margin: 1% 0.5% 1% 2.5%;
+    float: right;
+    height: 100%;
+    margin: 10px 0px;
+  }
+  aside.panel {
+    width: 20%;
+    margin: 1% 0.5% 1% 2.5%;
+    float: left;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: #F89846;
+    margin: 10px 0px;
+    border: 5px outset #fbc190;
   }
 }
 

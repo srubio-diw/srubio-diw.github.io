@@ -30,9 +30,38 @@
 	height: 100%;
 }
 
+.common-aside {
+	// Aside flotando a la izquierda, section flotando a la derecha
+	float: left;
+	// Posición absoluta
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	// Color de fondo
+	background-color: @aside-color;
+	margin: 10px 0px;
+	// Borde
+	border: 5px outset lighten(@color-complement-4, 15%);
+}
+
+.common-page {
+	// A la derecha
+	float: right;
+	.max-height;
+	margin: 10px 0px;
+}
+
+// Panel
+.panel {
+	min-height: @slider-height;
+	margin: 0px;
+	padding: 10px;
+}
+
 // ----------------------------------------------------
 // CSS GENERAL
 // ----------------------------------------------------
+
 // Padding en el logo de la barra de navegación para que no se pegue a las letras
 .navbar-logo {
 	padding: 0px 10px;
@@ -50,57 +79,63 @@
 	}
 }
 
-// Contenedor de la página
-#page {
-	// A la derecha
-	float: right;
-	.max-height;
-	margin: 10px 0px;
-	// Panel
-	.panel {
-		min-height: @slider-height;
-		margin: 0px;
-	}
-}
-
-// Columna lateral
-aside.panel {
-	// Aside flotando a la izquierda, section flotando a la derecha
-	float: left;
-	// Posición absoluta
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	// Color de fondo
-	background-color: @aside-color;
-	margin: 10px 0px;
-	// Borde
-	border: 5px outset @color-complement-3;
-}
-
 // Contenedor en posicion relativa
 .container {
 	position: relative;
 	.max-height;
 }
 
+// Borde del panel de contenido de la web
+section.panel {
+	border: 2px solid @color-primary-0;
+}
 // ----------------------------------------------------
 // MEDIA QUERIES POR TAMAÑO
 // ----------------------------------------------------
-// Estilo para monitores de portatil y sobremesas
 // Para las propiedades calculadas indico en un comentario el tamaño en px que le daría si la pantalla tuviera 1000px de ancho
-@media screen 
-	and (min-device-width: 1000px) {
-	
-	// Ancho fijo
-	aside {
-		width: 20%; // 200px
-		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
+
+// Estilo para móviles (sin media query, es por defecto)
+aside {
+	margin: 0px;
+}
+
+#page {
+	width: 80%;
+	margin: 0px auto;
+}
+
+// Estilo para tablets
+@media screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1199px) {
+
+	#page {
+		width: 65.104166667%; // 500px
+		margin: 1.302083333% 0.651041667% 1.302083333% 3.255208333%; // 10px 5px 10px 25px
+		.common-page;
 	}
 
-	// Ancho fijo
+	aside.panel {
+		width: 26.041666667%; // 200px
+		margin: 1.302083333% 0.651041667% 1.302083333% 3.255208333%; // 10px 5px 10px 25px
+		.common-aside;
+	}
+}
+
+// Estilo para monitores de portatil y sobremesas
+@media screen 
+	and (min-device-width: 1200px) {
+	
 	#page {
 		width: 74%; // 740px
 		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
+		.common-page;
 	}
+
+	aside.panel {
+		width: 20%; // 200px
+		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
+		.common-aside;
+	}
+
 }
