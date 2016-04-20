@@ -39,7 +39,7 @@
 	bottom: 0px;
 	// Color de fondo
 	background-color: @aside-color;
-	margin: 10px 0px;
+	margin: 25px 0px;
 	// Borde
 	border: 5px outset lighten(@color-complement-4, 15%);
 }
@@ -59,8 +59,26 @@
 }
 
 // ----------------------------------------------------
-// CSS GENERAL
+// CSS GENERAL COMUN
 // ----------------------------------------------------
+
+// Color de fondo del formulario de contacto
+form.contacto {
+	padding: 5%;
+	background-color: @color-complement-4!important;
+	margin-bottom: 0px;
+
+	// Uso los help-block para mostrar errores, por lo que los oculto de entrada
+	.help-block {
+		display: none;
+	}
+}
+
+// Titulos de la tabla en blanco
+thead th {
+	background-color: #4C8184;
+	color: #ffffff;
+}
 
 // Padding en el logo de la barra de navegación para que no se pegue a las letras
 .navbar-logo {
