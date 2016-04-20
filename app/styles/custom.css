@@ -20,7 +20,7 @@
 .panel {
   min-height: 515px;
   margin: 0px;
-  padding: 10px;
+  padding: 10px 10px 50px 10px;
 }
 .navbar-logo {
   padding: 0px 10px;
