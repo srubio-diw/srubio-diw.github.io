@@ -4,13 +4,16 @@
   height: 100%;
 }
 .common-aside {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
   float: left;
   position: absolute;
   top: 0px;
   bottom: 0px;
   background-color: #F89846;
-  margin: 25px 0px;
-  border: 5px outset #fbc190;
+  margin: 10px 0px 25px 0px;
+  border: 3px outset #fbc190;
 }
 .common-page {
   float: right;
@@ -21,6 +24,13 @@
   min-height: 515px;
   margin: 0px;
   padding: 10px 10px 50px 10px;
+}
+.tiempo {
+  margin: 0px auto;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px none #ffffff;
 }
 #social-icons {
   height: 100%;
@@ -73,13 +83,16 @@ aside {
   aside.panel {
     width: 26.041666667%;
     margin: 1.302083333% 0.651041667% 1.302083333% 3.255208333%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
     float: left;
     position: absolute;
     top: 0px;
     bottom: 0px;
     background-color: #F89846;
-    margin: 25px 0px;
-    border: 5px outset #fbc190;
+    margin: 10px 0px 25px 0px;
+    border: 3px outset #fbc190;
   }
 }
 @media screen and (min-device-width: 1200px) {
@@ -93,13 +106,16 @@ aside {
   aside.panel {
     width: 20%;
     margin: 1% 0.5% 1% 2.5%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
     float: left;
     position: absolute;
     top: 0px;
     bottom: 0px;
     background-color: #F89846;
-    margin: 25px 0px;
-    border: 5px outset #fbc190;
+    margin: 10px 0px 25px 0px;
+    border: 3px outset #fbc190;
   }
 }
 
