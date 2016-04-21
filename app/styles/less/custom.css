@@ -22,6 +22,9 @@
   margin: 0px;
   padding: 10px 10px 50px 10px;
 }
+#mensajeRecibido {
+  display: none;
+}
 form.contacto {
   padding: 5%;
   background-color: #F89846 !important;
