@@ -12,7 +12,8 @@
   top: 0px;
   bottom: 0px;
   background-color: #F89846;
-  margin: 10px 0px 25px 0px;
+  margin: 10px 0px 10px 0px;
+  padding: 10px 10px 50px 10px;
   border: 3px outset #fbc190;
 }
 .common-page {
@@ -20,12 +21,26 @@
   height: 100%;
   margin: 10px 0px;
 }
-.panel {
+section.extra-bottom-padding {
+  padding-bottom: 50px!important;
+}
+section.panel {
   min-height: 515px;
   margin: 0px;
-  padding: 10px 10px 50px 10px;
+  padding: 10px;
 }
-#CDSRATINGWIDGET327 {
+.panel-naranja {
+  border: 2px solid #6B3100 !important;
+}
+.panel-naranja .panel-heading {
+  color: #FFFFFF!important;
+  background-color: #D56200 !important;
+}
+#CDSRATINGWIDGET327,
+#CDSWIDWRL {
+  margin: 0px auto;
+}
+.thumbnail-center {
   margin: 0px auto;
 }
 .tiempo {
@@ -37,7 +52,7 @@
 }
 #social-icons {
   height: 100%;
-  padding: 10px;
+  padding: 7px;
 }
 form.contacto {
   padding: 5%;
@@ -94,7 +109,8 @@ aside {
     top: 0px;
     bottom: 0px;
     background-color: #F89846;
-    margin: 10px 0px 25px 0px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 10px 50px 10px;
     border: 3px outset #fbc190;
   }
 }
@@ -109,6 +125,7 @@ aside {
   aside.panel {
     margin: 1% 0.5% 1% 2.5%;
     min-height: 720px;
+    min-width: 260px;
     font-weight: bold;
     font-size: 18px;
     color: #ffffff;
@@ -117,7 +134,8 @@ aside {
     top: 0px;
     bottom: 0px;
     background-color: #F89846;
-    margin: 10px 0px 25px 0px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 10px 50px 10px;
     border: 3px outset #fbc190;
   }
 }

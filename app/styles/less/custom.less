@@ -43,7 +43,9 @@
 	bottom: 0px;
 	// Color de fondo
 	background-color: @aside-color;
-	margin: 10px 0px 25px 0px;
+	// Margin y padding
+	margin: 10px 0px 10px 0px;
+	padding: 10px 10px 50px 10px;
 	// Borde
 	border: 3px outset lighten(@color-complement-4, 15%);
 }
@@ -55,19 +57,39 @@
 	margin: 10px 0px;
 }
 
-// Panel
-.panel {
-	min-height: @slider-height;
-	margin: 0px;
-	padding: 10px 10px 50px 10px;
-}
-
 // ----------------------------------------------------
 // CSS GENERAL COMUN
 // ----------------------------------------------------
 
+// Extra padding abajo para el slider
+section.extra-bottom-padding {
+	padding-bottom: 50px!important;
+}
+
+// Panel de contenido
+section.panel {
+	min-height: @slider-height;
+	margin: 0px;
+	padding: 10px;
+}
+
+// Paneles de instalaciones y servicios
+.panel-naranja {
+	border: 2px solid @color-complement-0!important;
+
+	.panel-heading {
+		color: #FFFFFF!important;
+		background-color: @color-complement-3!important;
+	}
+}
+
 // Widget puntuación
-#CDSRATINGWIDGET327 {
+#CDSRATINGWIDGET327, #CDSWIDWRL {
+	margin: 0px auto;
+}
+
+// Thumbnail centrado
+.thumbnail-center {
 	margin: 0px auto;
 }
 
@@ -83,7 +105,7 @@
 // Iconos redes sociales
 #social-icons {
 	height: 100%;
-	padding: 10px;
+	padding: 7px;
 }
 
 // Color de fondo del formulario de contacto
@@ -177,6 +199,7 @@ aside {
 	aside.panel {
 		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
 		min-height: 720px;
+		min-width: 260px;
 		.common-aside;
 	}
 
