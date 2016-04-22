@@ -25,6 +25,13 @@
   margin: 0px;
   padding: 10px 10px 50px 10px;
 }
+.tiempo {
+  margin: 0px auto;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px none #ffffff;
+}
 #social-icons {
   height: 100%;
   padding: 10px;
@@ -90,14 +97,13 @@ aside {
 }
 @media screen and (min-device-width: 1200px) {
   #page {
-    width: 74%;
+    width: 70%;
     margin: 1% 0.5% 1% 2.5%;
     float: right;
     height: 100%;
     margin: 10px 0px;
   }
   aside.panel {
-    width: 20%;
     margin: 1% 0.5% 1% 2.5%;
     font-weight: bold;
     font-size: 18px;
