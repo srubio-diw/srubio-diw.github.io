@@ -20,3 +20,5 @@ bungalow.jpg (dominio publico): https://commons.wikimedia.org/wiki/File:Camping-
 restaurante.jpg (dominio publico): https://pixabay.com/es/restaurante-mesa-comedor-gafas-738788/
 
 piscina.jpg (sin protección legal): https://commons.wikimedia.org/wiki/File:Piscina_com_vista_sobre_o_castelo.jpg?uselang=es
+
+columpios.jpg (CC BY SA) By Dinamita71 (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons https://commons.wikimedia.org/wiki/File:Columpios_en_el_camping_de_Llamas_de_la_Ribera.jpg

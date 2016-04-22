@@ -73,4 +73,22 @@ function validateForm() {
 	}
 }
 
+// Funcion para cargar el mapa de google maps
+function googleMap() {
+	new Maplace({
+		locations: [
+			{
+				lat: 39.4802477, 
+				lon: -0.3323593,
+				title: 'Camping La Rosa de los Vientos',
+				zoom: 12,
+				html: [
+					'<h5>Camping La Rosa de los Vientos</h5>',
+					'<p>Estamos aquí</p>'
+				].join('')
+			}
+		]
+	}).Load();
+}
+
 /*eslint-enable no-unused-vars*/
