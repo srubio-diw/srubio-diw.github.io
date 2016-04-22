@@ -25,6 +25,9 @@
   margin: 0px;
   padding: 10px 10px 50px 10px;
 }
+#CDSRATINGWIDGET327 {
+  margin: 0px auto;
+}
 .tiempo {
   margin: 0px auto;
   border-radius: 10px 10px 10px 10px;
@@ -105,6 +108,7 @@ aside {
   }
   aside.panel {
     margin: 1% 0.5% 1% 2.5%;
+    min-height: 720px;
     font-weight: bold;
     font-size: 18px;
     color: #ffffff;
