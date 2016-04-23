@@ -14,7 +14,7 @@
 @color-complement-4: #F89846;
 
 // ----------------------------------------------------
-// VARIABLES SUSCEPTIBLES DE CAMBIOS
+// VARIABLES
 // ----------------------------------------------------
 // Ancho del slider de cabecera
 @slider-width: 640px;
@@ -23,6 +23,8 @@
 // Color del aside
 @aside-color: @color-complement-4;
 
+@blanco: #FFFFFF;
+
 // ----------------------------------------------------
 // MIXINS
 // ----------------------------------------------------
@@ -30,17 +32,20 @@
 	height: 100%;
 }
 
+.clear-floats {
+	clear: both;
+}
+
 .common-aside {
 	// Letra
 	font-weight: bold;
 	font-size: 18px;
-	color: #ffffff;
+	color: @blanco;
 	// Aside flotando a la izquierda, section flotando a la derecha
 	float: left;
 	// Posición absoluta
 	position: absolute;
 	top: 0px;
-	//ttom: 0px;
 	// Color de fondo
 	background-color: @aside-color;
 	// Margin y padding
@@ -60,6 +65,14 @@
 // ----------------------------------------------------
 // CSS GENERAL COMUN
 // ----------------------------------------------------
+
+// Footer
+footer {
+	padding: 10px 30px;
+	background-color: @color-primary-3;
+	color: @blanco;
+	margin: 30px 0px 0px 0px;
+}
 
 // Imágenes de galería
 #images {
@@ -100,7 +113,7 @@ section.panel {
 	border: 2px solid @color-complement-0!important;
 
 	.panel-heading {
-		color: #FFFFFF!important;
+		color: @blanco!important;
 		background-color: @color-complement-3!important;
 	}
 }
@@ -121,7 +134,7 @@ section.panel {
 	border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
 	-webkit-border-radius: 10px 10px 10px 10px;
-	border: 0px none #ffffff;
+	border: 0px none @blanco;
 }
 
 // Iconos redes sociales
@@ -145,7 +158,7 @@ form.contacto {
 // Titulos de la tabla en blanco
 thead th {
 	background-color: #4C8184;
-	color: #ffffff;
+	color: @blanco;
 }
 
 // Padding en el logo de la barra de navegación para que no se pegue a las letras
