@@ -28,21 +28,30 @@
 // ----------------------------------------------------
 // MIXINS
 // ----------------------------------------------------
+// Máxima altura
 .max-height {
 	height: 100%;
 }
 
+// Limpieza de floats
 .clear-floats {
 	clear: both;
 }
 
+// Estilos comunes al aside y la barra de widgets
 .common-aside {
+	// Borde
+	border: 3px outset lighten(@color-complement-4, 15%);
+	// Color de fondo
+	background-color: @aside-color;
+	padding: 10px;
+}
+
+/*.common-aside {
 	// Letra
 	font-weight: bold;
 	font-size: 18px;
 	color: @blanco;
-	// Aside flotando a la izquierda, section flotando a la derecha
-	float: left;
 	// Posición absoluta
 	position: absolute;
 	top: 0px;
@@ -53,26 +62,17 @@
 	padding: 10px 10px 50px 10px;
 	// Borde
 	border: 3px outset lighten(@color-complement-4, 15%);
-}
+}*/
 
+// Estilos comunes a la página para varios tamaños
 .common-page {
-	// A la derecha
-	float: right;
-	.max-height;
-	margin: 10px 0px;
+	/*.max-height;
+	margin: 10px 0px;*/
 }
 
 // ----------------------------------------------------
 // CSS GENERAL COMUN
 // ----------------------------------------------------
-
-// Footer
-footer {
-	padding: 10px 30px;
-	background-color: @color-primary-3;
-	color: @blanco;
-	margin: 30px 0px 0px 0px;
-}
 
 // Imágenes de galería
 #images {
@@ -86,8 +86,16 @@ footer {
 		display: inline;
 	}
 	img {
-		margin: 5px;
+		margin: 5px 0px;
 	}
+}
+
+// Footer
+footer {
+	padding: 10px 30px;
+	background-color: @color-primary-3;
+	color: @blanco;
+	margin: 30px 0px 0px 0px;
 }
 
 // Mapa de Google
@@ -118,9 +126,9 @@ section.panel {
 	}
 }
 
-// Widget puntuación
-#CDSRATINGWIDGET327, #CDSWIDWRL {
-	margin: 0px auto;
+// Widgets tripadvisor y tiempo pequeño
+#CDSRATINGWIDGET327, #CDSWIDWRL, #CDSWIDWRM, #c_7ed0983d46597aa42f8e1063a20dcb05 {
+	margin: 0px auto!important;
 }
 
 // Thumbnail centrado
@@ -199,24 +207,18 @@ aside {
 }
 
 #page {
-	width: 80%;
+	width: 95%;
 	margin: 0px auto;
 }
 
 // Estilo para tablets
 @media screen
-	and (min-device-width: 768px)
+	and (min-device-width: 600px)
 	and (max-device-width: 1199px) {
 
-	#page {
-		width: 65.104166667%; // 500px
-		margin: 1.302083333% 0.651041667% 1.302083333% 3.255208333%; // 10px 5px 10px 25px
-		.common-page;
-	}
-
-	aside.panel {
-		width: 26.041666667%; // 200px
-		margin: 1.302083333% 0.651041667% 1.302083333% 3.255208333%; // 10px 5px 10px 25px
+	#widgets {
+		width: 95%;
+		margin: 10px auto;
 		.common-aside;
 	}
 }
@@ -226,12 +228,16 @@ aside {
 	and (min-device-width: 1200px) {
 	
 	#page {
+		// A la derecha
+		float: right;
 		width: 70%; // 900px;
 		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
 		.common-page;
 	}
 
 	aside.panel {
+		// Aside flotando a la izquierda, section flotando a la derecha
+		float: left;
 		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
 		min-height: 720px;
 		min-width: 260px;
