@@ -1,6 +1,12 @@
 Tecnologías:
-- Proyecto generado con Yeoman: Bootstrap + LESS + Boilerplate + Modernizr
-- He añadido Normalize por mi cuenta.
+- Proyecto generado con Yeoman: Bootstrap + LESS + Boilerplate + Modernizr + Normalize
 - He usado el plugin de jQuery bxSlider (http://bxslider.com/) para hacer el slider de cabercera.
 - He usado Gimp para la edición de imágenes. He usado el plugin BIMP para tratar de golpe varias imágenes con Gimp, lo que he empleado para recortar las imágenes a tamaños concretos. http://registry.gimp.org/node/26259
+- He usado el plugin de jQuery Maplace.js para mostrar el mapa de Google Maps.
+- He usado el plugin de jQuery Viewer.js para mostrar la galería de imágenes.
 
+Paleta de colores:
+- Sacada de Paletton: http://paletton.com/#uid=23j0U0kwMdsup6Foqc7AKqKm+v8
+
+Fuente de Google:
+- He usado la fuente Raleway de Google: https://www.google.com/fonts/specimen/Raleway . La he incluido en Bootstrap directamente cambiado la variable de variables.less.
