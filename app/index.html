@@ -15,15 +15,8 @@
 	<!-- build:css styles/theme.css -->
 	<link rel="stylesheet" href="styles/less/custom.css" />
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-	<link rel="stylesheet" href="styles/spritesheet.css" />
-	<link rel="stylesheet" href="/bower_components/viewerjs/dist/viewer.css">
+
 	<!-- endbuild -->
-
-	<!-- Fuente de Google -->
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,700italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-	<!-- Estilo CSS del plugin bxSlider -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css" />
 	
 	</head>
 	<body>
@@ -64,14 +57,6 @@
 						</li>
 						<li><a href="#" onClick="loadPage('html/contacto.html')">Contacto</span></a></li>
 				  	</ul>
-					<!--<div id="social-icons" class="pull-right"> 
-						<a href="#" class="facebook"></a> 
-						<a href="#" class="twitter"></a> 
-						<a href="#" class="instagram"></a> 
-						<a href="#" class="youtube"></a> 
-						<a href="#" class="tumblr"></a> 
-						<a href="#" class="googleplus"></a> 
-					</div>-->
 					<div id="social-icons" class="pull-right">
 						<a href="#" class="sprite sprite-facebook-bg"></a> 
 						<a href="#" class="sprite sprite-twitter-bg"></a> 
@@ -89,7 +74,7 @@
 				<div class="row">
 					<div class="col-md-12 ">
 						<div id="c_39d0a135511cd3c0006599b84c6b58fd" class="normal tiempo"></div
-						><script type="text/javascript" src="http://www.eltiempo.es/widget/widget_loader/39d0a135511cd3c0006599b84c6b58fd"></script>
+						>
 					</div>
 				</div>
 				<div class="row">&nbsp;</div>
@@ -124,7 +109,7 @@
 
 			<div id="widgets" class="hidden-xs hidden-lg row panel">
 				<div class="col-xs-5 col-md-5">
-					<div id="c_7ed0983d46597aa42f8e1063a20dcb05" class="mini"></div><script type="text/javascript" src="http://www.eltiempo.es/widget/widget_loader/7ed0983d46597aa42f8e1063a20dcb05"></script>
+					<div id="c_7ed0983d46597aa42f8e1063a20dcb05" class="mini"></div>
 				</div>
 				<div class="col-xs-7 col-md-7">
 					<div id="TA_cdswritereviewnew451" class="TA_cdswritereviewnew">
@@ -182,9 +167,6 @@
 		<!-- endbower -->
 		<!-- endbuild -->
 		
-		<!-- Google MAPS -->
-		<script src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyCDOpB-rrCaRIWtwPNUuwQxsluFBc_lntg"></script>
-		<!-- Plugin jQuery bxSlider -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
 		<script>typeof($(document).bxSlider) === "function" || document.write('<script src="scripts/bxSlider.min.js">\x3C/script>')</script>
 
@@ -194,8 +176,11 @@
 		// Cargar el home al abrir la web
 		$(document).ready(function () {
 			loadPage('html/home.html');
+			$.getScript('https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyCDOpB-rrCaRIWtwPNUuwQxsluFBc_lntg');
+			$.getScript('http://www.eltiempo.es/widget/widget_loader/39d0a135511cd3c0006599b84c6b58fd');
+			$.getScript('http://www.eltiempo.es/widget/widget_loader/7ed0983d46597aa42f8e1063a20dcb05');
+			document.head.innerHTML += '<link rel="stylesheet" href="styles/spritesheet.css" /><link rel="stylesheet" href="/bower_components/viewerjs/dist/viewer.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css" /><link href="https://fonts.googleapis.com/css?family=Raleway:400,700,700italic,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">';
 		});
 	</script>
 
 </html>
-
