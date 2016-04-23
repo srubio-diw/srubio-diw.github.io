@@ -1,7 +1,12 @@
 Logo de la web: http://publicdomainvectors.org/es/vectoriales-gratuitas/Rosa-con-dibujo-vectorial-de-desplazamiento/5069.html (dominio público)
 	- La he editado con Gimp para exportarla como PNG a un tamaño ajustado.
 
-Favicon:
+Favicon (dominio publico): https://pixabay.com/es/rose-rojo-resumen-flor-rosas-rojas-913309/
+	- Editada para tener tamaño favicon.
+
+acampada_libre.jpg (dominio público): https://pixabay.com/es/campamento-al-aire-libre-caravana-987707/
+
+bungalow.jpg (dominio publico): https://commons.wikimedia.org/wiki/File:Camping-budapest-bungalow.JPG
 
 camping1.jpg
 	-By The original uploader was Mwanner at English Wikipedia - Transferred from en.wikipedia to Commons., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2105744
@@ -13,12 +18,13 @@ camping3.jpg (dominio público): https://pixabay.com/es/bungalow-hotel-resorts-d
 
 camping4.jpg (dominio público): https://pixabay.com/es/spanish-wells-bahamas-isla-oc%C3%A9ano-363141/
 
-acampada_libre.jpg (dominio público): https://pixabay.com/es/campamento-al-aire-libre-caravana-987707/
+caravanas.jpg (dominio publico): https://pixabay.com/es/caravana-camping-tienda-vacaciones-1008576/
 
-bungalow.jpg (dominio publico): https://commons.wikimedia.org/wiki/File:Camping-budapest-bungalow.JPG
-
+columpios.jpg (CC BY SA) By Dinamita71 (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons https://commons.wikimedia.org/wiki/File:Columpios_en_el_camping_de_Llamas_de_la_Ribera.jpg
 restaurante.jpg (dominio publico): https://pixabay.com/es/restaurante-mesa-comedor-gafas-738788/
 
 piscina.jpg (sin protección legal): https://commons.wikimedia.org/wiki/File:Piscina_com_vista_sobre_o_castelo.jpg?uselang=es
 
-columpios.jpg (CC BY SA) By Dinamita71 (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons https://commons.wikimedia.org/wiki/File:Columpios_en_el_camping_de_Llamas_de_la_Ribera.jpg
+piscina-cerveza.jpg (dominio publico): https://pixabay.com/es/cerveza-brasil-piscina-971972/
+
+playa.jpg (dominio público): https://pixabay.com/es/playa-palmeras-arena-oc%C3%A9ano-mar-1149146/

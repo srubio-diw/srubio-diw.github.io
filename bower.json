@@ -5,7 +5,8 @@
     "bootstrap": "~3.3.5",
     "modernizr": "~2.8.1",
     "mustache.js": "mustache#^2.2.1",
-    "maplace-js": "^0.2.7"
+    "maplace-js": "^0.2.7",
+    "viewerjs": "fengyuanchen/viewerjs#^0.4.0"
   },
   "overrides": {
     "bootstrap": {

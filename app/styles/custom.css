@@ -21,6 +21,18 @@
   height: 100%;
   margin: 10px 0px;
 }
+#images {
+  padding: 0px;
+  list-style: none;
+  cursor: zoom-in;
+}
+#images li {
+  display: inline;
+}
+#map {
+  width: 500px;
+  height: 300px;
+}
 section.extra-bottom-padding {
   padding-bottom: 50px!important;
 }
