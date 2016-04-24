@@ -40,7 +40,10 @@
 </section>
 
 <script>
-	$('#cerrarMensaje').click(function() {
-		$('#mensajeRecibido').hide()
+	$(document).ready(function() {
+		$('#mensajeRecibido').hide();
+		$('#cerrarMensaje').click(function() {
+			$('#mensajeRecibido').hide();
+		});
 	});
 </script>
