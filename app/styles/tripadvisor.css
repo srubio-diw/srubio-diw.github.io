@@ -1,0 +1,105 @@
+/* ----------------------------------------------------------------------------------------- */
+/* Write a Review (large) Widget
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDWRL { font:normal 12px Verdana,"Bitstream Vera Sans",Arial,Helvetica,sans-serif; color:#2c2c2c; background-color:#fff;
+             margin:0; padding:0; width:240px; max-width: 240px; overflow:hidden; text-align:left; position: relative;}
+#CDSWIDWRL a,
+#CDSWIDWRL a:hover,
+#CDSWIDWRL a:visited { border:none; font-weight:bold; color:#2c2c2c; }
+#CDSWIDWRL a { margin:0; padding:0; text-decoration:underline; outline:none; }
+#CDSWIDWRL a:hover { text-decoration:underline; background-color:transparent; }
+
+#CDSWIDWRL dl, #CDSWIDWRL dt, #CDSWIDWRL dd
+        { margin:0;padding:0;list-style:none; font-weight:normal; font-style:normal; color:#000; }
+        
+#CDSWIDWRL img { border: none; margin: 0; max-width: none !important; }
+
+/* Wrapper
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDWRL .widWRLData { padding:8px 10px 15px; background-color:#fff; max-height:250px; position: relative; overflow: hidden; }
+#CDSWIDWRL .widWRLData .widWRLWrap { height:auto; overflow:hidden;}
+
+#CDSWIDWRL .widWRLData dl { padding:0 2px;}
+#CDSWIDWRL .widWRLData dl dd dl { padding:0;}
+
+#CDSWIDWRL .widWRLData form { margin:0; padding:0; display:block; }
+
+/* Branding (Identity)
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDWRL .widWRLBranding { margin-bottom:6px; }
+#CDSWIDWRL .widWRLBranding dt { overflow:hidden; margin: 2px 1px;}
+#CDSWIDWRL .widWRLBranding dt.messaging { font-size: 10px; overflow: visible; padding-bottom: 6px; border-bottom:1px solid #CCCCCC;}
+#CDSWIDWRL .widWRLBranding dt img { border:none; display:block; margin:0; }
+#CDSWIDWRL .widWRLBranding dd { margin:3px 0 8px; font-style:italic; font-size:12px; color:#787878;}
+
+#CDSWIDWRL .widWRLBranding a,
+#CDSWIDWRL .widWRLBranding a:link,
+#CDSWIDWRL .widWRLBranding a:hover,
+#CDSWIDWRL .widWRLBranding a:visited { color:#787878; font-size:12px; font-style:italic; text-decoration:underline; }
+
+/* TA link
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDWRL .widWRLLink { font:bold 12px Verdana,Tahoma,Arial,'Bitstream Vera Sans',sans-serif; color:#2C2C2C; padding-top: 4px;}
+
+/* Review rating
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDWRL .widWRLRating,
+#CDSWIDWRL .widWRLRatingMd,
+#CDSWIDWRL .widWRLRatingLg { overflow:hidden; position:relative; margin:5px 0; font:normal 14px Arial,Verdana,Tahoma,'Bitstream Vera Sans',sans-serif; color:#09532D; }
+
+#CDSWIDWRL .widWRLRating { height:20px; }
+#CDSWIDWRL .widWRLRatingMd { height:30px; }
+#CDSWIDWRL .widWRLRatingLg { height:35px; }
+
+#CDSWIDWRL .widWRLRating span,
+#CDSWIDWRL .widWRLRatingMd span,
+#CDSWIDWRL .widWRLRatingLg span { float:left; }
+
+.widWRLRatingText,
+.widWRLRatingTextSmall,
+.widWRLRatingTextSmaller { margin:0;  }
+
+.widWRLRatingText { font-size:14px; white-space: pre-line;}
+.widWRLRatingTextSmall { font-size:12px; white-space: pre-line;}
+.widWRLRatingTextSmaller { width:125px; font-size:9px; white-space: pre-line;}
+
+.widWRLRate { margin-top: 0px; cursor:pointer; display:block; margin-right:4px; position:relative; overflow:hidden;}
+.widWRLRate img { position:absolute;}
+
+.widWRLRate.n00, .widWRLRate.n10, .widWRLRate.n20, .widWRLRate.n30, .widWRLRate.n40, .widWRLRate.n50, .widWRLRate.g00 { width:82px; height:20px;}
+
+.widWRLRate.n00 img, .widWRLRate.n10 img, .widWRLRate.n20 img, .widWRLRate.n30 img, .widWRLRate.n40 img, .widWRLRate.n50 img, .widWRLRate.g00 img { left:-36px;}
+
+.widWRLRate.n00 img { top:-200px;}
+.widWRLRate.n10 img { top:-160px;}
+.widWRLRate.n20 img { top:-120px;}
+.widWRLRate.n30 img { top:-80px;}
+.widWRLRate.n40 img { top:-40px;}
+.widWRLRate.n50 img { top:0;}
+.widWRLRate.g00 img { top:-220px;}
+
+/* Review title
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDWRL .widWRLReview { margin:4px 0 0; border:none; }
+#CDSWIDWRL .widWRLReview textarea { font:normal 11px Verdana,Tahoma,Arial,'Bitstream Vera Sans',sans-serif; color:#787878; border:1px solid #589442; padding:3px; width:210px; height:60px; min-width:210px; max-width:210px; min-height:60px; max-height:60px; overflow:auto; word-wrap:break-word; float:none; margin:0;}
+
+/* Continue
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDWRL .widWRLButton { margin:0; border:none; float:none; position:static; }
+#CDSWIDWRL .widWRLButton input { margin: 17px 0 0;  padding:2px 10px; border:1px solid #EA9523; font:bold 13px Arial,Tahoma,"Bitstream Vera Sans",sans-serif; color:#000; white-space:nowrap; cursor:pointer; float:none; width:auto; height:27px; }
+
+/* Error Box
+   ----------------------------------------------------------------------------------------- */
+#CDSWIDERR.widErrBx { height:auto; position:relative; overflow:hidden; background-color:#D9E4C4; font:normal 12px Verdana,"Bitstream Vera Sans",Arial,Helvetica,sans-serif; color:#2c2c2c; text-align:left; margin:0; padding:0; }
+#CDSWIDERR.widErrBx .widErrCnrs span { position:relative; z-index:1; display:block; width:6px; height:6px; background:url("/img2/sprites/cdsWdgtV1.gif") 0 0 no-repeat;}
+#CDSWIDERR.widErrBx .widErrCnrs span.widErrCnrLft { background-position:-152px 0; float:left;}
+#CDSWIDERR.widErrBx .widErrCnrs span.widErrCnrRgt { background-position:-158px 0; float:right;}
+
+#CDSWIDERR.widErrBx .widErrData { margin:2px; padding:0 0 2px; background-color:#fff; }
+#CDSWIDERR.widErrBx .widErrData, #CDSWIDERR.widErrBx .widErrData .widErrBranding { position:relative; }
+#CDSWIDERR.widErrBx .widErrData .widErrBranding { z-index:0; border-bottom:2px solid #d9e4c4; background-color:#ecf1e1; }
+#CDSWIDERR.widErrBx .widErrData .widErrBranding dl { margin:0; padding:6px 11px; }
+#CDSWIDERR.widErrBx .widErrData .widErrBranding dt { width:132px; height:22px; overflow:hidden; margin-left:1px; }
+#CDSWIDERR.widErrBx .widErrData .widErrBranding dt img { border:none; }
+#CDSWIDERR.widErrBx .widErrData .widErrBranding dd { margin:3px 1px -1px; font-style:italic; font-size:11px; }
+#CDSWIDERR.widErrBx .widErrData .widErrComponent p { margin:0; padding:12px 0; text-align:center; }
