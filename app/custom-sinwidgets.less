@@ -1,0 +1,233 @@
+// ----------------------------------------------------
+// COLORES DE LA PALETA
+// ----------------------------------------------------
+@color-primary-0: #003E41;	/* Main Primary color */
+@color-primary-1: #021F20;
+@color-primary-2: #0E383A;
+@color-primary-3: #017B81;
+@color-primary-4: #2B9196;
+
+@color-complement-0: #6B3100;	/* Main Complement color */
+@color-complement-1: #351A03;
+@color-complement-2: #613917;
+@color-complement-3: #D56200;
+@color-complement-4: #F89846;
+
+// ----------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------
+// Ancho del slider de cabecera
+@slider-width: 640px;
+@slider-height: 515px;
+
+// Color del aside
+@aside-color: @color-complement-4;
+
+@blanco: #FFFFFF;
+
+// ----------------------------------------------------
+// MIXINS
+// ----------------------------------------------------
+// Máxima altura
+.max-height {
+	height: 100%;
+}
+
+// Limpieza de floats
+.clear-floats {
+	clear: both;
+}
+
+// Estilos comunes al aside y la barra de widgets
+.common-aside {
+	// Borde
+	border: 3px outset lighten(@color-complement-4, 15%);
+	// Color de fondo
+	background-color: @aside-color;
+	padding: 10px;
+}
+
+
+// ----------------------------------------------------
+// CSS GENERAL COMUN
+// ----------------------------------------------------
+
+// Imágenes de galería
+#images {
+	// Sin padding
+	padding: 0px;
+	// Lista sin estilo
+	list-style: none;
+	// Cambiar cursor
+	cursor: zoom-in;
+	li {
+		display: inline;
+	}
+	img {
+		margin: 5px 0px;
+	}
+}
+
+// Footer
+footer {
+	padding: 10px 30px;
+	background-color: @color-primary-3;
+	color: @blanco;
+	margin: 30px 0px 0px 0px;
+	a {
+		color: @blanco;
+		text-decoration: none;
+	}
+	a:hover {
+		color: @blanco;
+	}
+}
+
+// Mapa de Google
+#map {
+	width: 500px;
+	height: 300px;
+}
+
+// Extra padding abajo para el slider
+section.extra-bottom-padding {
+	padding-bottom: 50px!important;
+}
+
+// Panel de contenido
+section.panel {
+	min-height: @slider-height;
+	margin: 0px;
+	padding: 10px;
+}
+
+// Paneles de instalaciones y servicios
+.panel-naranja {
+	border: 2px solid @color-complement-0!important;
+
+	.panel-heading {
+		color: @blanco!important;
+		background-color: @color-complement-3!important;
+	}
+}
+
+// Widgets tripadvisor y tiempo pequeño
+#CDSRATINGWIDGET327, #CDSWIDWRL, #CDSWIDWRM, #c_7ed0983d46597aa42f8e1063a20dcb05 {
+	margin: 0px auto!important;
+}
+
+// Thumbnail centrado
+.thumbnail-center {
+	margin: 0px auto;
+}
+
+// Tiempo
+.tiempo {
+	margin: 0px auto;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px none @blanco;
+}
+
+// Iconos redes sociales
+#social-icons {
+	height: 100%;
+	padding: 7px;
+}
+
+// Color de fondo del formulario de contacto
+form.contacto {
+	padding: 5%;
+	background-color: @color-complement-4!important;
+	margin-bottom: 0px;
+
+	// Uso los help-block para mostrar errores, por lo que los oculto de entrada
+	.help-block {
+		display: none;
+	}
+}
+
+// Titulos de la tabla en blanco
+thead th {
+	background-color: #4C8184;
+	color: @blanco;
+}
+
+// Padding en el logo de la barra de navegación para que no se pegue a las letras
+.navbar-logo {
+	padding: 0px 10px;
+}
+
+// Caja del slider de cabecera
+.bx-wrapper, {
+	// Ancho del slider de imágenes	
+	width: @slider-width;
+	// Centrar el slider
+	margin: auto !important;
+	// Correción para centrar la imagen
+	img {
+    	margin: 0 auto;
+	}
+}
+
+// Contenedor en posicion relativa
+.container {
+	position: relative;
+	.max-height;
+}
+
+// Borde del panel de contenido de la web
+section.panel {
+	border: 2px solid @color-primary-0;
+}
+// ----------------------------------------------------
+// MEDIA QUERIES POR TAMAÑO
+// ----------------------------------------------------
+// Para las propiedades calculadas indico en un comentario el tamaño en px que le daría si la pantalla tuviera 1000px de ancho
+
+// Estilo para móviles (sin media query, es por defecto)
+aside {
+	margin: 0px;
+}
+
+#page {
+	width: 95%;
+	margin: 0px auto;
+}
+
+// Estilo para tablets
+@media screen
+	and (min-device-width: 600px)
+	and (max-device-width: 1199px) {
+
+	#widgets {
+		width: 95%;
+		margin: 10px auto;
+		.common-aside;
+	}
+}
+
+// Estilo para monitores de portatil y sobremesas
+@media screen 
+	and (min-device-width: 1200px) {
+	
+	#page {
+		// A la derecha
+		/*float: right;
+		width: 70%; // 900px;
+		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px*/
+		width: 95%;
+	margin: 0px auto;
+	}
+
+	/*aside.panel {
+		// Aside flotando a la izquierda, section flotando a la derecha
+		float: left;
+		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px
+		min-height: 720px;
+		min-width: 260px;
+		.common-aside;
+	}*/
+
+}
