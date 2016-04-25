@@ -30,12 +30,18 @@
 // ----------------------------------------------------
 // Máxima altura
 .max-height {
-	height: 100%;
+	min-height: 100%;
 }
 
 // Limpieza de floats
 .clear-floats {
 	clear: both;
+}
+
+// Limpieza de floats dejando margen para el footer
+.clear-floats-margin {
+	clear: both;
+	margin-bottom: 75px;
 }
 
 // Estilos comunes al aside y la barra de widgets
@@ -70,10 +76,14 @@
 
 // Footer
 footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 	padding: 10px 30px;
 	background-color: @color-primary-3;
 	color: @blanco;
-	margin: 30px 0px 0px 0px;
+	margin: 0px;
 	a {
 		color: @blanco;
 		text-decoration: none;
@@ -160,26 +170,31 @@ thead th {
 }
 
 // Caja del slider de cabecera
-.bx-wrapper, {
+.bx-wrapper {
 	// Ancho del slider de imágenes	
 	width: @slider-width;
-	// Centrar el slider
-	margin: auto !important;
 	// Correción para centrar la imagen
 	img {
     	margin: 0 auto;
 	}
 }
 
-// Contenedor en posicion relativa
-.container {
+// Borde del panel de contenido de la web
+section.panel {
+	border: 2px solid @color-primary-0;
+}
+
+// envoltura
+.wrapper {
 	position: relative;
 	.max-height;
 }
 
-// Borde del panel de contenido de la web
-section.panel {
-	border: 2px solid @color-primary-0;
+
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 // ----------------------------------------------------
 // MEDIA QUERIES POR TAMAÑO
@@ -206,6 +221,7 @@ aside {
 		margin: 10px auto;
 		.common-aside;
 	}
+
 }
 
 // Estilo para monitores de portatil y sobremesas
@@ -218,7 +234,7 @@ aside {
 		width: 70%; // 900px;
 		margin: 1% 0.5% 1% 2.5%; // 10px 5px 10px 25px*/
 		width: 95%;
-	margin: 0px auto;
+		margin: 0px auto;
 	}
 
 	/*aside.panel {
