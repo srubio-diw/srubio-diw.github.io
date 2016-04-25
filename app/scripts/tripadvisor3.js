@@ -1,1 +1,0 @@
-document.write( '<script src="https://www.tripadvisor.com/WidgetEmbed-cdsratingsonlynarrow?amp;locationId=2602374&amp;border=false&amp;uniq=327&amp;lang=es&amp;display_version=2"></script>' );

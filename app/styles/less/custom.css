@@ -1,1 +1,152 @@
-.max-height{min-height:100%}.clear-floats{clear:both}.clear-floats-margin{clear:both;margin-bottom:75px}.common-aside{border:3px outset #fbc190;background-color:#F89846;padding:10px}#images{padding:0;list-style:none;cursor:zoom-in}#images li{display:inline}#images img{margin:5px 0}footer{position:absolute;bottom:0;left:0;right:0;padding:10px 30px;background-color:#017B81;color:#FFF;margin:0}footer a{color:#FFF;text-decoration:none}footer a:hover{color:#FFF}#map{width:500px;height:300px}section.extra-bottom-padding{padding-bottom:50px!important}section.panel{min-height:515px;margin:0;padding:10px}.panel-naranja{border:2px solid #6B3100!important}.panel-naranja .panel-heading{color:#FFF!important;background-color:#D56200!important}#CDSRATINGWIDGET327,#CDSWIDWRL,#CDSWIDWRM,#c_7ed0983d46597aa42f8e1063a20dcb05{margin:0 auto!important}.thumbnail-center{margin:0 auto}.tiempo{margin:0 auto;border-radius:10px 10px 10px 10px;-moz-border-radius:10px 10px 10px 10px;-webkit-border-radius:10px 10px 10px 10px;border:0 none #FFF}#social-icons{height:100%;padding:7px}form.contacto{padding:5%;background-color:#F89846!important;margin-bottom:0}form.contacto .help-block{display:none}thead th{background-color:#4C8184;color:#FFF}.navbar-logo{padding:0 10px}.bx-wrapper{width:640px}.bx-wrapper img{margin:0 auto}section.panel{border:2px solid #003E41}.wrapper{position:relative;min-height:100%}body,html{height:100%;margin:0;padding:0}aside{margin:0}#page{width:95%;margin:0 auto}@media screen and (min-device-width:600px) and (max-device-width:1199px){#widgets{width:95%;margin:10px auto;border:3px outset #fbc190;background-color:#F89846;padding:10px}}@media screen and (min-device-width:1200px){#page{float:right;width:70%;margin:1% .5% 1% 2.5%}aside.panel{float:left;margin:1% .5% 1% 2.5%;min-height:720px;min-width:260px;border:3px outset #fbc190;background-color:#F89846;padding:10px}}
+/* Main Primary color */
+/* Main Complement color */
+.max-height {
+  min-height: 100%;
+}
+.clear-floats {
+  clear: both;
+}
+.clear-floats-margin {
+  clear: both;
+  margin-bottom: 75px;
+}
+.common-aside {
+  border: 3px outset #fbc190;
+  background-color: #F89846;
+  padding: 10px;
+}
+#images {
+  padding: 0px;
+  list-style: none;
+  cursor: zoom-in;
+}
+#images li {
+  display: inline;
+}
+#images img {
+  margin: 5px 0px;
+}
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 10px 30px;
+  background-color: #017B81;
+  color: #FFFFFF;
+  margin: 0px;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #FFFFFF;
+}
+#map {
+  width: 500px;
+  height: 300px;
+}
+section.extra-bottom-padding {
+  padding-bottom: 50px!important;
+}
+section.panel {
+  min-height: 515px;
+  margin: 0px;
+  padding: 10px;
+}
+.panel-naranja {
+  border: 2px solid #6B3100 !important;
+}
+.panel-naranja .panel-heading {
+  color: #FFFFFF !important;
+  background-color: #D56200 !important;
+}
+#CDSRATINGWIDGET327,
+#CDSWIDWRL,
+#CDSWIDWRM,
+#c_7ed0983d46597aa42f8e1063a20dcb05 {
+  margin: 0px auto!important;
+}
+.thumbnail-center {
+  margin: 0px auto;
+}
+.tiempo {
+  margin: 0px auto;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px none #FFFFFF;
+}
+#social-icons {
+  height: 100%;
+  padding: 7px;
+}
+form.contacto {
+  padding: 5%;
+  background-color: #F89846 !important;
+  margin-bottom: 0px;
+}
+form.contacto .help-block {
+  display: none;
+}
+thead th {
+  background-color: #4C8184;
+  color: #FFFFFF;
+}
+.navbar-logo {
+  padding: 0px 10px;
+}
+.bx-wrapper {
+  width: 640px;
+}
+.bx-wrapper img {
+  margin: 0 auto;
+}
+section.panel {
+  border: 2px solid #003E41;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+aside {
+  margin: 0px;
+}
+#page {
+  width: 95%;
+  margin: 0px auto;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1199px) {
+  #widgets {
+    width: 95%;
+    margin: 10px auto;
+    border: 3px outset #fbc190;
+    background-color: #F89846;
+    padding: 10px;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  #page {
+    float: right;
+    width: 70%;
+    margin: 1% 0.5% 1% 2.5%;
+  }
+  aside.panel {
+    float: left;
+    margin: 1% 0.5% 1% 2.5%;
+    min-height: 720px;
+    min-width: 260px;
+    border: 3px outset #fbc190;
+    background-color: #F89846;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
